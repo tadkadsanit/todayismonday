@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 480px;
+    height: 300px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #434343;
+    position: fixed;
+    justify-content: space-around;
+    min-height: 5rem;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 4rem 0 4rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    font-weight: bolder;
+    border-bottom: solid 3px red;
+}
+
+nav ul li a {
+    color: #F8F8F8;
+}
+
+#welcome-section {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    padding: 5rem 0 5rem 0;
+    background-image: linear-gradient( 73deg, #7D1935, rgb(230, 62, 109));
+}
+
+main section#welcome-section h1 {
+    font-size: 5rem;
+}
+
+main section#welcome-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6B7AA1;
+    padding: 0 0 10rem 0;
+}
+
+#my-projects {
+    padding: 10rem 0 2rem 0;
+    font-size: 3rem;
+}
+
+.container {
+    margin: 3rem 0 2rem 0;
+    background-color: #393232;
+}
+
+.container a p {
+    font-size: 1.9rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #444444;
+    justify-content: space-around;
+    min-height: 5rem;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 2rem;
+    color: #DA0037;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    margin: 0 4rem 0 4rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+footer ul li:hover {
+    font-weight: bolder;
+    border-bottom: solid 3px blue;
+}
+
+footer ul li a {
+    color: #F8F8F8;
+}
+
+@media only screen and (max-width: 367px) {
+    * {
+        font-size: 85%;
+    }
+    img {
+        max-width: 300px;
+        max-height: 120px;
+    }
+    nav ul li {
+        margin: 0 2rem 0 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    * {
+        font-size: 85%;
+        overflow-x: hidden;
+    }
+    img {
+        width: 400px;
+        height: 220px;
+    }
+    nav ul li {
+        margin: 0 3rem 0 3rem;
+    }
+    footer {
+        display: grid;
+    }
+    footer h3 {
+        font-size: 1.2rem;
+    }
+    footer ul li {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 85%;
+    }
+    footer ul li {
+        margin: 0 1.5rem 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    * {
+        font-size: 85%;
+    }
+    footer ul li {
+        margin: 0 2.5rem 0 2.5rem;
+    }
+}
